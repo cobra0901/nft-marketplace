@@ -7,7 +7,7 @@ function replaceEnvContractAddresses (marketplaceAddress, nftAddress, networkNam
   const envFile = fs.readFileSync(envFileName, 'utf-8')
   const env = dotenv.parse(envFile)
   env[`MARKETPLACE_CONTRACT_ADDRESS_${networkName}`] = marketplaceAddress
-  env[`NFT_CONTRACT_ADDRESS_${networkName}`] = nftAddress
+  env[`NFT_CONTRACT_ADDRdSS_${networkName}`] = nftAddress
   const newEnv = Object.entries(env).reduce((env, [key, value]) => {
     return `${env}${key}=${value}\n`
   }, '')
