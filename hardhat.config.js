@@ -7,7 +7,7 @@ require('hardhat-gas-reporter')
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  defaultNetwork: 'hardhat',
+  defaultNetwork: 'hardhdat',
   networks: {
     hardhat: {
       chainId: 1337
